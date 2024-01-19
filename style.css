@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+:root{
+    --whiteSvg : #ffffff;
+    --whiteText : #ffffff;
+    --projectColor: #e1e7ef;
+    --iconColor: #2390cf;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: auto;
+}
+/* dashboard start */
+.dashboard{
+    /* flex-grow: 1; */
+    background-color: var(--iconColor);
+    height: auto;
+    /* min-width: 250px;
+    flex-shrink: 0; */
+    flex: 1 0 250px;
+}
+
+#icon-dashboard{
+    fill: var(--whiteSvg);
+    height: 40px;
+    width: 40px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    gap: 0 20px;
+    margin: 20px 0 50px 20px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--whiteText);
+    font-weight: bolder;
+}
+
+.workfeature{
+    margin: 20px 0 50px 20px;
+}
+
+li{
+    list-style: none;
+    font-weight:900;
+}
+
+svg{
+    fill: var(--whiteSvg);
+    width: 25px;
+    height: 25px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 0 20px;
+    margin: 20px 0 0 10px;
+    cursor: pointer;
+    color: var(--whiteText);
+}
+
+.ss1{
+    margin: 50px 0 0 10px;
+}
+/* dashboard end */
+/* content  */
+.content{
+    flex-grow: 10;
+    display: grid;
+    grid-template-rows: auto auto;
+    /* grid-template-columns: auto; */
+}
+
+
+/* content > detail start */
+.details{
+    box-shadow: 0 0.5em 0.5em rgba(0,0,0,0.3);
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 25px 50px 25px 50px; 
+}
+
+.details svg{
+    fill: black;
+    width: 25px;
+    height: 25px;
+}
+
+.header{
+    display: flex;
+    /* justify-content: center; */
+    /* padding: 0 0 25px 0;  */
+}
+
+.search{
+    flex: 1;
+    /* align-self: center; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+input{
+    width: 500px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    /* outline: none; */
+    border: none;
+    background-color: #e1e7ef;
+}
+
+.bellNprofile{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 25px;
+}
+
+#profileIcon{
+    width: 50px;
+    height: 50px;
+}
+
+#pIcon{
+    width: 75px;
+    height: 75px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.userDetail{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    align-content: center;
+    column-gap: 15px;
+    font-weight: bold;
+}
+
+#user{
+    font-size: 1.5em;
+}
+
+.NUSfeature{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px;
+    align-items: center;
+}
+
+button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--iconColor);
+    color: var(--projectColor);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* content > detail end  */
+
+/* content > information start */
+
+
+.information{
+    background-color: #e1e7ef;
+    display: grid;
+    /* padding-top: 35px;
+    padding-left: 25px; */
+    padding: 35px 25px 35px 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.project{
+    grid-row: 1/3;
+    /* margin: 50px; */
+}
+
+.information span{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.listOfProject{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(1, 213px) repeat(3, 200px);
+    /* justify-content: space-between; */
+    gap: 20px 30px;
+}
+
+.projectCommProperty{
+    /* padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    padding: 30px 20px 20px 20px;
+    background-color: var(--whiteText);
+    border-left: 0.5em solid pink;
+    border-radius: 10px;
+}
+
+.project1, .project2{
+    margin-top: 13px;
+}
+
+#projectDetail{
+    letter-spacing: 2px;
+    color: #8a919b;
+}
+
+.serIcon {
+    display: flex;
+    gap: 0 20px;
+    justify-content: flex-end;
+}
+
+#starIcon,#eyeIcon,#repoIcon{
+    fill: black;
+    /* display: flex;
+    gap: 0 20px; */
+}
+
+.announcement{
+    align-self: start;
+}
+
+
+
+.listOfAnn{
+    margin-top: 13px;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 10px;
+    padding: 30px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.ann1, .ann2{
+    margin-bottom: 15px;
+}
+
+.ann2,.ann3{
+    padding-top: 15px;
+    border-top: #8a919b 2px solid;
+
+}
+
+.annTitle{
+    text-transform: capitalize;
+}
+
+.annMsg{
+    font-size: 0.8em;
+    line-height: 1.2;
+    margin-top: 5px;
+    color: #8a919b;
+}
+
+.trendTopic{
+    margin-top: 13px;
+    background-color: var(--whiteText);
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    row-gap: 15px;
+}
+
+.trend1,.trend2,.trend3,.trend4{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    /* row-gap: 15px; */
+}
+
+.trendIcon{
+    fill: black;
+    width: 50px;
+    height: 50px;
+}
+
+.trendTitle{
+    color: #8a919b;
+}
+
+/* .trending{
+    display: grid;
+    row
+} */
+/* content > information end */
